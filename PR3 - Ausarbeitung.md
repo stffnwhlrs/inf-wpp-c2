@@ -94,3 +94,4 @@ db.fussball.update({name:'HSV'}, {$set:{abgestiegen: true}})
 db.fussball.update({farben: 'weiss'}, {$set:{waschtemperatur: 90}}, false, true)
 ```
 ## Aufgabe 9
+Test
