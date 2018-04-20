@@ -1,0 +1,17 @@
+{% extends 'layouts/main.html' %}
+{% block content %}
+  <h1>Mongo Postcode</h1>
+  <form method="get">
+    <label for="postcode">Postcode:</label>
+    <input type="text" name="postcode" id="postcode">
+    <input type="submit" value="Query abschicken">
+  </form>
+
+  {% if postcode != None %}
+    <h4>Ausgabe für den Postcode: {{postcode}}:</h4>
+    <strong>City:</strong> {{city}} <br>
+    <strong>State:</strong> {{state}} <br>
+    <strong>Laufzeit:</strong> {{duration}}
+  {% endif %}
+
+{% endblock %}

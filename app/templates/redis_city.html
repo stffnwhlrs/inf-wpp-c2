@@ -1,0 +1,20 @@
+{% extends 'layouts/main.html' %}
+{% block content %}
+  <h1>Redis City</h1>
+  <form method="get">
+    <label for="city">City:</label>
+    <input type="text" name="city" id="city">
+    <input type="submit" value="Query abschicken">
+  </form>
+
+  {% if city != None %}
+    <h4>Ausgabe für die Stadt: {{city}}</h4>
+    <ul>
+    {% for postcode in postcodes %}
+    <li>{{postcode}}</li>
+    {% endfor %}
+    </ul>
+    <strong>Laufzeit:</strong> {{duration}}
+  {% endif %}
+
+{% endblock %}
