@@ -71,7 +71,7 @@ db.fussball.find({Tabellenplatz: {$lt: 16}}).sort({Tabellenplatz:1})
 ```
 ### Aufgabe 8 c)
 ```
-db.fussball.find({Tabellenplatz: {$gte: 16}}).sort({Tabellenplatz:1})
+db.fussball.find({name: 'HSV'}, {_id:0})
 ```
 ### Aufgabe 8 d)
 Augsburg verliert alle seine Attribute bis auf den Tabellenplatz 1. Geschieht dadurch, dass Parameter 2 das komplette Dokumente ersetzt.
