@@ -84,7 +84,6 @@ def mongo_city():
 
     return render_template('mongo_city.html', city=city, postcodes=postcodes, duration=duration)
 
-
 # --- ROUTES END ---
 
 if __name__ == '__main__':
